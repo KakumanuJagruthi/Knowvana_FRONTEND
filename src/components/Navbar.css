@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.navbar-logo img {
+    height: 120px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-section {
+    position: relative;
+    text-align: center; /* Center the username and icon */
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the icon */
+}
+
+.username {
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: absolute;
+    top: 60px; /* Adjusted to appear below the username */
+    right: 0;
+    background-color: white;
+    border: 1px solid grey;
+    display: none; /* Hidden by default */
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.profile-section:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content {
+    padding: 10px;
+}
+
+/* Style each link to display as a block element */
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Ensure each link is on its own line */
+    padding: 5px 10px; /* Add padding for better click area */
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+/* Optional: Add styling for the logout button if needed */
+.dropdown button {
+    width: 100%; /* Full width */
+    padding: 5px 10px; /* Add padding for better click area */
+    background-color: red; /* Logout button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left; /* Align text to the left */
+}
+
+.dropdown button:hover {
+    background-color: darkred; /* Darker on hover */
+}

@@ -1,0 +1,101 @@
+/* src/components/LoginPage.css */
+/* Add a background gradient to the login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f1d130, #fcc52d, #f4f4f4); /* Gradient colors */
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .login-card {
+    background-color: white;
+    padding: 40px; /* Increase padding for more breathing room */
+    border-radius: 15px; /* Softer rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    width: 400px; /* Slightly wider card */
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  
+  .knowvana-logo {
+    width: 150px; /* Adjust size */
+    margin-bottom: 5px; /* More spacing between logo and title */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1)); /* Subtle shadow */
+  }
+  
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px; /* Add space between heading and form */
+    letter-spacing: 1px; /* Add spacing between letters */
+  }
+  
+  .input-group label {
+    font-size: 1rem;
+    color: #666; /* Lighter label text */
+    text-align: left;
+  }
+  
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+
+  
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 12px; /* More padding for comfortable input */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  .input-group input:focus, .input-group select:focus {
+    border-color: #f1d130; /* Border changes to your theme color */
+    box-shadow: 0 0 8px rgba(241, 209, 48, 0.4); /* Add glow effect on focus */
+  }
+  
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #f1d130, #fcc52d); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: linear-gradient(135deg, #fcc52d, #f1d130);
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+  }
+  
+  
+  .login-footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .login-footer a {
+    color: #f1d130;
+    text-decoration: none;
+    font-weight: bold; /* Make the link bold */
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  

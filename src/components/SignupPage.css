@@ -1,0 +1,68 @@
+/* src/components/SignupPage.css */
+.signup-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .welcome-section {
+    flex: 1;
+    padding: 20px;
+    background-color: white; /* Optional: Add a background color */
+  }
+  
+  .welcome-section h1 {
+    margin-bottom: 20px;
+  }
+  /* src/components/SignupPage.css */
+/* Add this rule for the welcome image */
+.welcome-image {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some spacing above and below the image */
+    align-items: left;
+  }
+  
+  
+  .signup-form-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* Optional: Add a background color */
+    border-left: 1px solid #ddd;
+  }
+  
+  .signup-form-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signup-btn {
+    background-color: #f5a720; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #f3bf23; /* Button hover color */
+  }
+  

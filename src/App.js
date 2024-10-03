@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dashboard'; // Main Dashboard component
+import Navbar from './components/Navbar'; // Import Navbar
+import EducatorDashboard from './components/EducatorDashboard'; // Import Educator Dashboard
+import CreateCourse from './components/CreateCourse';
+import LoginPage from './components/LoginPage';
+import SignupPage from './components/SignupPage';
 
 function App() {
+  const [user, setUser] = useState(null); // State to store user details
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar user={user} /> {/* Navbar will be displayed on every page */}
+      <Routes>
+      <Route path="/educatordashboard" element={<EducatorDashboard user={user} />} />
+      <Route path="/studentdashboard" element={<Dashboard user={user} />} />
+        <Route path="/create-course" element={<CreateCourse />} />
+        <Route path="/" element={<SignupPage setUser={setUser} />} />
+        <Route path="/login" element={<LoginPage setUser={setUser} />} />
+      </Routes>
+    </Router>
   );
 }
 
